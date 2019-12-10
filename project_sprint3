@@ -1,8 +1,9 @@
 #import for Metadata, GUI, and Music Player
 
-from mutagen.easyid3 import EasyID3
-import pygame
-from tkinter.filedialog import *
+import os # to fetch songs and directories 
+from tkinter.filedialog import askdirectory # for selecting our song directory
+import pygame # for playing music
+from mutagen.id3 import ID3 # For tagging the meta data to our songs
 from tkinter import *
 
 pygame.init()
